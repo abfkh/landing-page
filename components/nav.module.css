@@ -1,0 +1,262 @@
+.hamburgerMenuIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hamburger {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.iconLeft {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.label {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 28px;
+  font-family: var(--font-tajawal);
+  color: var(--generic-white);
+  text-align: center;
+}
+.buttonMasterMedium,
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container1 {
+  flex-direction: row;
+  gap: var(--gap-7xs);
+}
+.buttonMasterMedium {
+  border-radius: var(--br-7xs);
+  background-color: var(--color-blueviolet-100);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-5xs) var(--padding-xl);
+}
+.buttonStyleWithLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.label1,
+.primaryButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.primaryButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.label1 {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 28px;
+  font-family: var(--font-tajawal);
+  color: var(--color-blueviolet-100);
+  text-align: center;
+  display: inline-block;
+}
+.buttonMasterMedium1 {
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-5xs) 0;
+  align-items: center;
+  justify-content: center;
+}
+.tertiaryButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.actions {
+  width: 244px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xl);
+}
+.label2 {
+  text-decoration: none;
+  color: inherit;
+}
+.label2,
+.label4 {
+  position: relative;
+  line-height: 28px;
+}
+.buttonStyleWithLabel4 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: inherit;
+}
+.links {
+  width: 347px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.frameChild,
+.ppIcon {
+  position: absolute;
+  left: 99px;
+}
+.frameChild {
+  top: 15.5px;
+  width: 38px;
+  height: 39px;
+  display: none;
+}
+.ppIcon {
+  top: 15px;
+  width: 39px;
+  height: 42px;
+  overflow: hidden;
+}
+.dentistry {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 69px);
+  line-height: 72px;
+  display: inline-block;
+  width: 116px;
+}
+.frameParent {
+  position: relative;
+  width: 138px;
+  height: 72px;
+}
+.logoBlock {
+  text-decoration: none;
+  width: 183px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: var(--color-blueviolet-100);
+  font-family: var(--font-el-messiri);
+}
+.container,
+.content {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.content {
+  margin: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-65xl);
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--primary-button-color);
+  font-family: var(--font-tajawal);
+}
+.container {
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-3xs) 0;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+  .actions {
+    flex: 1;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .buttonStyleWithLabel4 {
+    align-items: center;
+    justify-content: center;
+  }
+  .content,
+  .links {
+    box-sizing: border-box;
+  }
+  .links {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: var(--padding-8xs);
+  }
+  .content {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+}
+@media screen and (max-width: 960px) {
+  .hamburger,
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .hamburger {
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .label {
+    font-size: var(--font-size-mini);
+  }
+  .primaryButton {
+    display: none;
+  }
+  .label1 {
+    font-size: var(--font-size-mini);
+  }
+  .tertiaryButton {
+    display: none;
+  }
+  .label2,
+  .label4 {
+    font-size: var(--font-size-mini);
+  }
+  .links {
+    display: none;
+    width: auto;
+    align-self: unset;
+    gap: var(--gap-4xs);
+  }
+}
+@media screen and (max-width: 420px) {
+  .links {
+    display: none;
+  }
+  .content {
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}

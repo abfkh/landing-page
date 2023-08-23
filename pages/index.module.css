@@ -1,0 +1,35 @@
+.child {
+  align-self: stretch;
+  background-color: #f5f8ff;
+  display: none;
+}
+.div {
+  position: relative;
+  background-color: var(--generic-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+}
+@media screen and (max-width: 960px) {
+  .child {
+    padding-top: var(--padding-31xl);
+    padding-bottom: var(--padding-11xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .child {
+    width: auto;
+    align-self: unset;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

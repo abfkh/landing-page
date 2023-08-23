@@ -1,0 +1,28 @@
+.ba4822976d3a94495e56eLogo01Icon,
+.ba4822976d3fbed95e573Logo06Icon {
+  position: relative;
+  width: 226px;
+  height: 100.5px;
+  object-fit: cover;
+}
+.ba4822976d3fbed95e573Logo06Icon {
+  margin-left: -19px;
+}
+.ba4822976d3a94495e56eLogo01Parent {
+  align-self: stretch;
+  background-color: var(--color-ghostwhite-100);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-33xl) 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+}
+@media screen and (max-width: 420px) {
+  .ba4822976d3a94495e56eLogo01Parent {
+    width: auto;
+    align-self: unset;
+  }
+}

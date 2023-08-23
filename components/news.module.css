@@ -1,0 +1,116 @@
+.span {
+  color: var(--color-midnightblue);
+}
+.div,
+.div1 {
+  position: relative;
+}
+.div {
+  align-self: stretch;
+  line-height: 72px;
+}
+.div1 {
+  flex: 1;
+  line-height: 30.01px;
+}
+.wrapper {
+  width: 611px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-slategray);
+  font-family: var(--font-ara-hamah-1982);
+}
+.b {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 20px;
+  display: inline-block;
+  font-family: var(--font-tajawal);
+  color: var(--generic-white);
+  text-align: center;
+  width: 138px;
+}
+.container,
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-blueviolet-100);
+  border-radius: var(--br-xs);
+  box-shadow: 0 0 0 rgba(74, 58, 255, 0.12);
+  width: 202px;
+  height: 68px;
+  justify-content: center;
+}
+.parent {
+  width: 991px;
+  justify-content: flex-start;
+  gap: var(--gap-10xl);
+}
+.frameGroup,
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.frameGroup {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-tajawal);
+}
+.frameParent {
+  flex-direction: column;
+  padding: var(--padding-xl) 0 var(--padding-140xl);
+  justify-content: flex-start;
+  gap: var(--gap-63xl);
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-blueviolet-100);
+  font-family: var(--font-el-messiri);
+}
+@media screen and (max-width: 1200px) {
+  .b,
+  .div1 {
+    font-size: var(--font-size-mini);
+  }
+}
+@media screen and (max-width: 960px) {
+  .frameGroup {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .div {
+    font-size: var(--font-size-11xl);
+  }
+  .div1 {
+    font-size: var(--font-size-mid);
+    flex: 1;
+  }
+  .b {
+    font-size: var(--font-size-mini);
+  }
+  .frameGroup {
+    align-self: stretch;
+    width: auto;
+    flex-direction: column;
+    gap: var(--gap-3xs);
+  }
+  .frameParent {
+    width: auto;
+    align-self: unset;
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,74 @@
+.rectangleIcon {
+  align-self: stretch;
+  border-radius: var(--br-12xl) var(--br-12xl) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 295.42px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.div,
+.div1,
+.rectangleIcon {
+  position: relative;
+}
+.div {
+  align-self: stretch;
+  line-height: 30px;
+}
+.div1 {
+  font-size: var(--font-size-xl);
+  line-height: 30.01px;
+  color: var(--color-slategray);
+  display: inline-block;
+  height: 75px;
+  flex-shrink: 0;
+}
+.a,
+.div1,
+.parent {
+  align-self: stretch;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-28xl);
+}
+.a {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 24px;
+  color: var(--color-blueviolet-100);
+  text-align: right;
+  display: inline-block;
+  height: 29.54px;
+  flex-shrink: 0;
+}
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-28xl);
+}
+.frameParent {
+  align-self: stretch;
+  padding: 0 var(--padding-xl);
+  justify-content: flex-start;
+}
+.rectangleParent {
+  border-radius: var(--br-13xl);
+  background-color: var(--generic-white);
+  box-shadow: 0 2px 8px rgba(93, 79, 255, 0.03);
+  width: 376.33px;
+  height: 570.96px;
+  justify-content: center;
+  min-width: 270px;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-midnightblue);
+  font-family: var(--font-tajawal);
+}
